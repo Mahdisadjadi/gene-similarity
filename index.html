@@ -18,14 +18,17 @@ body{
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
+  
+//append the div to the body
+$("body").append(results);
 
 // load the external data
+var results = $("<div/>");
 d3.json("data.json", function(error, treeData) {
   root = treeData;
-  cosole.log(root[0].title);
-});
+  results.append("<p>" + root.title + "</p>");});
 
-d3.json("FILENAME", function(error, data) {
+d3.json("data.json", function(error, data) {
     data = JSON.parse(data);
   console.log(data[0].title);}
     );
