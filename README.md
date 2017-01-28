@@ -9,6 +9,6 @@ The repository is made of two main files:
 
 
 # To-do list
-Create a dashboard using D3 which enables user to:
+1. Create a dashboard using D3 which enables user to:
 2. Select a country and see genetic contributions as a bar chart,
 3. Make a graph representation to find the most similar genetic combinations,such that ethnicities are clustered  based on their similarities.
