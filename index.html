@@ -20,9 +20,9 @@ body{
 <script>
 
 // load the external data
-var results = $("<div/>");
+var results = ("<div>");
 results.append("<p> theme </p>");
-d3.json("/data.json", function(data) {
+d3.json("data.json", function(data) {
   //Loop through the data and 
   // append each value wrapped in a p to the div
   for(i=0;i<data.length;i++) {
@@ -31,6 +31,7 @@ d3.json("/data.json", function(data) {
   };
 };);  
 //append the div to the body
+results.append('</div>');
 $("body").append(results);
 
 var width = 960,
