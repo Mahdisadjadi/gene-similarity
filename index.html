@@ -21,14 +21,15 @@ body{
 
 // load the external data
 var results = $("<div/>");
+results.append("<p> theme </p>");
 d3.json("/data.json", function(data) {
   //Loop through the data and 
   // append each value wrapped in a p to the div
   for(i=0;i<data.length;i++) {
     console.log(data[i].title);
-    results.append("<p>" + data[0].title + "</p>");
+    //results.append("<p>" + data[0].title + "</p>");
   };
-});  
+};);  
 //append the div to the body
 $("body").append(results);
 
