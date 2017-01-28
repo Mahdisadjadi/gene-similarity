@@ -5,8 +5,9 @@ A data visualization of gene similarity across ethnicities using National Geogra
 The repository is made of two main files:
  * `scrapping.ipynb`: A file to extract the data from the locally saved
  file but also works for extracting from the URL.
- * `webpage`: It contains a local version of the National Geographic webpage.
-
+ * `webpage` directory: It contains a local version of the National Geographic webpage.
+ * `data.json`: contains extracted data from the webpage.
+ * `index.html`: The main webpage to show D3 dashboard.
 
 # To-do list
 1. Create a dashboard using D3 which enables user to:
