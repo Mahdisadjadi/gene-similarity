@@ -1,16 +1,14 @@
 # gene-similarity
 A data visualization of gene similarity across ethnicities using National Geographic data
 
-# Files
+# Files & directory
 The repository is made of two main files:
  * `scrapping.ipynb`: A file to extract the data from the locally saved
  file but also works for extracting from the URL.
- * 1
+ * `webpage`: It contains a local version of the National Geographic webpage.
 
 
 # To-do list
-Two platform:
-1 - selecting country then show a bar chart
-2 - a graph representation having the selected nationality at center
-and showing closer ethnicities closer to the node.
-3 -
+Create a dashboard using D3 which enables user to:
+2. Select a country and see genetic contributions as a bar chart,
+3. Make a graph representation to find the most similar genetic combinations,such that ethnicities are clustered  based on their similarities.
