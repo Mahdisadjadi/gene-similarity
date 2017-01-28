@@ -23,17 +23,11 @@ body{
 
 // load the external data
 var results = $("<div/>");
-d3.json("data.json", function(error, treeData) {
-  root = treeData;
-  results.append("<p>" + root.title + "</p>");
-});
+d3.json("/data.json", function(data) {
+  results.append("<p>" + data[0].title + "</p>");
+});  
 //append the div to the body
 $("body").append(results);
-
-d3.json("data.json", function(error, data) {
-    data = JSON.parse(data);
-  console.log(data[0].title);}
-    );
 
 var width = 960,
     height = 500;
