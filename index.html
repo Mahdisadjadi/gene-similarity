@@ -27,7 +27,8 @@ d3.json("/data.json", function(data) {
   //Loop through the data and 
   // append each value wrapped in a p to the div
   for(i=0;i<data.length;i++) {
-        results.append("<p>" + data[0].title + "</p>");
+    console.log(data[i].title);
+    results.append("<p>" + data[0].title + "</p>");
   }
 });  
 //append the div to the body
@@ -36,14 +37,14 @@ $("body").append(results);
 var width = 960,
     height = 500;
 var bodySelection = d3.select("body");
-var svgSelection = bodySelection.append("svg")
-    .attr("width", width)
+var svgSelection = bodySelection.append("svg");
+    .attr("width", width);
     .attr("height", height);
     .style("background", "black");
-var circleSelection = svgSelection.append("circle")
-    .attr("cx", 35)
-    .attr("cy", 35)
-    .attr("r", 150)
+var circleSelection = svgSelection.append("circle");
+    .attr("cx", 35);
+    .attr("cy", 35);
+    .attr("r", 150);
     .style("fill", "purple");
 
 </script>
