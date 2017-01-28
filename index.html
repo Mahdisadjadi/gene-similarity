@@ -24,7 +24,11 @@ body{
 // load the external data
 var results = $("<div/>");
 d3.json("/data.json", function(data) {
-  results.append("<p>" + data[0].title + "</p>");
+  //Loop through the data and 
+  // append each value wrapped in a p to the div
+  for(i=0;i<myData.length;i++) {
+        results.append("<p>" + data[0].title + "</p>");
+  }
 });  
 //append the div to the body
 $("body").append(results);
