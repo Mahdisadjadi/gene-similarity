@@ -21,8 +21,8 @@ body{
 
 // load the external data
 d3.json("data.json", function(error, treeData) {
-  root = treeData[0];
-  cosole.log(root);
+  root = treeData;
+  cosole.log(root[0].title);
 });
 
 d3.json("FILENAME", function(error, data) {
