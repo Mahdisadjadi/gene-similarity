@@ -1,5 +1,5 @@
 # gene-similarity
-A data visualization of gene similarity across ethnicities using National Geographic data
+A data visualization of gene similarity across ethnicities using National Geographic data from Geno 2.0 Next Generation ([link](https://genographic.nationalgeographic.com/reference-populations-next-gen/)).
 
 # Files & directory
 The repository is made of two main files:
